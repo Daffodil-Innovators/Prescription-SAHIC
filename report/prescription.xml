@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="dsl_prescription_therapy_extension"
+              inherit_id="dsl_prescription_extension.dsl_report_dsl_lab_test_view_form_inherited">
+
+        <xpath expr="//div[@class='row mt-1' and @style='margin-top: 95px; padding-top:150px;']" position="replace">
+
+            <div class="d-flex justify-content-start align-items-center text-center" style="color: green; width:100%;">
+
+                <img t-if="doc.company_id"
+                     t-att-src="'/web/image/res.company/%s/logo' % doc.company_id.id"
+                     alt="Company Logo"
+                     style="width: 200px; height: 200px; margin-right:20px;"/>
+
+                <div>
+                    <div style="font-size:25px; font-weight:700; margin-top:3px;">
+                        সাহিকের বিশেষায়িত ই.এন.টি. (কান, নাক, গলা) হাসপাতাল
+                        <br/>
+                        Specialized E.N.T. Hospital (SENTH) of SAHIC
+                        <br/>
+                        মহাখালী, ঢাকা-১২১২
+                    </div>
+
+                    <div style="font-size: 15px; margin-top: 3px;">
+                        ফোন নং - ০২২২২২৮২০০৭,০২২২২২৮১৫৩৫,০২২২২২৮৬৫৩৭ মোবাইল নং - ০১৭৫৪-৮৬৭১৮৮
+                    </div>
+
+                    <div style="font-size: 15px;margin-top: 3px;">
+                        Email:<span t-field="doc.company_id.email"/>, Website:
+                        <span t-field="doc.company_id.website"/>
+                    </div>
+
+                    <div style="font-size: 25px;margin-top: 5px;font-weight:700;">
+                        বহির্বিভাগের রোগীর ব্যবস্থাপএ
+                    </div>
+                </div>
+            </div>
+        </xpath>
+
+
+        <xpath expr="//div[@style='line-height: 0.5;']" position="after">
+            <t t-if="doc.symptom_ids">
+                <span class="font-weight-bold mb-2">
+                    <u>Symptoms:</u>
+                </span>
+                <div class="mt-2" style="line-height: 0.5;">
+                    <t t-foreach="doc.symptom_ids" t-as="symptom">
+                        <p>
+                            <span t-field="symptom.name"/>
+                            <br/>
+                        </p>
+                    </t>
+                </div>
+            </t>
+
+            <t t-if="doc.findings_ids">
+                <span class="font-weight-bold mb-2">
+                    <u>Findings:</u>
+                </span>
+                <div class="mt-2" style="line-height: 0.5;">
+                    <t t-foreach="doc.findings_ids" t-as="finding">
+                        <p>
+                            <span t-field="finding.name"/>
+                            <br/>
+                        </p>
+                    </t>
+                </div>
+            </t>
+
+            <t t-if="doc.is_therapy">
+                <span class="font-weight-bold mb-2">
+                    <u>Therapy:</u>
+                </span>
+                <div class="mt-2" style="line-height: 0.5;">
+                    <p>
+                        <t t-foreach="doc.physiotherapy_ids" t-as="phy">
+                            <span t-field="phy.date" t-options="{'format': 'd MMMM yyyy'}"/>
+                            <br/>
+                            <br/>
+                        </t>
+                    </p>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

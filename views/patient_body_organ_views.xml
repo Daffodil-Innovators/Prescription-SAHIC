@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Body Organ Tree View -->
+        <record id="view_dsl_patient_body_organ_tree" model="ir.ui.view">
+            <field name="name">dsl.patient.body.organ.tree</field>
+            <field name="model">dsl.patient.body.organ</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code"/>
+                    <field name="name"/>
+<!--                    <field name="active"/>-->
+                </tree>
+            </field>
+        </record>
+
+        <!-- Body Organ Form View -->
+        <record id="view_dsl_patient_body_organ_form" model="ir.ui.view">
+            <field name="name">dsl.patient.body.organ.form</field>
+            <field name="model">dsl.patient.body.organ</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="code"/>
+                            </group>
+                            <group>
+                                <field name="active"/>
+                            </group>
+                        </group>
+<!--                        <notebook>-->
+<!--                            <page string="Notes">-->
+<!--                                <field name="note"/>-->
+<!--                            </page>-->
+<!--                            <page string="Related Symptoms">-->
+<!--                                <field name="symptom_ids">-->
+<!--                                    <tree>-->
+<!--                                        <field name="code"/>-->
+<!--                                        <field name="name"/>-->
+<!--                                        <field name="active"/>-->
+<!--                                    </tree>-->
+<!--                                </field>-->
+<!--                            </page>-->
+<!--                            <page string="Related Findings">-->
+<!--                                <field name="finding_ids">-->
+<!--                                    <tree>-->
+<!--                                        <field name="code"/>-->
+<!--                                        <field name="name"/>-->
+<!--                                        <field name="active"/>-->
+<!--                                    </tree>-->
+<!--                                </field>-->
+<!--                            </page>-->
+<!--                        </notebook>-->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Body Organ Search View -->
+        <record id="view_dsl_patient_body_organ_search" model="ir.ui.view">
+            <field name="name">dsl.patient.body.organ.search</field>
+            <field name="model">dsl.patient.body.organ</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <filter string="Active" name="active" domain="[('active', '=', True)]"/>
+                    <filter string="Inactive" name="inactive" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <!-- Body Organ Action -->
+        <record id="action_dsl_patient_body_organ" model="ir.actions.act_window">
+            <field name="name">Body Organs</field>
+            <field name="res_model">dsl.patient.body.organ</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_active': 1}</field>
+        </record>
+    </data>
+</odoo>

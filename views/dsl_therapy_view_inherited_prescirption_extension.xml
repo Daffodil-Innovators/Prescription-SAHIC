@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="dsl_therapy_view_inherited_prescirption_extension" model="ir.ui.view">
+        <field name="name">therapy.inherited.view</field>
+        <field name="model">prescription.order</field>
+        <field name="inherit_id" ref="dsl_prescription_extension.dsl_view_prescription_order_form_inherited"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='plan_ids']" position="after">
+
+                <group string="Symptoms">
+                    <field name="symptom_ids" colspan="4" nolabel="1">
+                        <tree editable="bottom">
+                            <field name="name" string="Symptom Name"/>
+                            <field name="body_organ_id" string="Body Organ"/>
+                        </tree>
+                    </field>
+                </group>
+
+                <!-- Findings Section -->
+                <group string="Findings">
+                    <field name="findings_ids" colspan="4" nolabel="1">
+                        <tree editable="bottom">
+                            <field name="name" string="Finding Name"/>
+                            <field name="body_organ_id" string="Body Organ"/>
+                        </tree>
+                    </field>
+                </group>
+
+                <group string="Therapy">
+                    <field name="is_therapy" widget="boolean_toggle"/>
+                </group>
+                <field name="physiotherapy_ids" colspan="4" nolabel="1"
+                       attrs="{'invisible': [('is_therapy', '=', False)]}">
+                    <tree string="Physiotherapy Records" create="false" edit="false">
+                        <field name="name"/>
+                        <field name="date" string="Physiotherapy Date"/>
+                        <field name="physiotherapist_id" string="Physiotherapist"/>
+                        <field name="state"/>
+                    </tree>
+                </field>
+
+            </xpath>
+
+        </field>
+    </record>
+</odoo>
+

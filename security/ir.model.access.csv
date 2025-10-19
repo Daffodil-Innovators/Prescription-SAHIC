@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dsl_patient_body_organ,access_dsl_patient_body_organ,model_dsl_patient_body_organ,base.group_user,1,1,1,1
+access_dsl_patient_symptom,access_dsl_patient_symptom,model_dsl_patient_symptom,base.group_user,1,1,1,1
+access_dsl_patient_findings,access_dsl_patient_findings,model_dsl_patient_findings,base.group_user,1,1,1,1

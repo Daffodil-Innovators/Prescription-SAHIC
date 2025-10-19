@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Patient Symptom Tree View -->
+        <record id="view_dsl_patient_symptom_tree" model="ir.ui.view">
+            <field name="name">dsl.patient.symptom.tree</field>
+            <field name="model">dsl.patient.symptom</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="code"/>
+                    <field name="name"/>
+                    <field name="body_organ_id"/>
+<!--                    <field name="active"/>-->
+                </tree>
+            </field>
+        </record>
+
+        <!-- Patient Symptom Form View -->
+        <record id="view_dsl_patient_symptom_form" model="ir.ui.view">
+            <field name="name">dsl.patient.symptom.form</field>
+            <field name="model">dsl.patient.symptom</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="code"/>
+                                <field name="body_organ_id"/>
+                            </group>
+                            <group>
+                                <field name="active"/>
+                            </group>
+                        </group>
+<!--                        <notebook>-->
+<!--                            <page string="Notes">-->
+<!--                                <field name="note"/>-->
+<!--                            </page>-->
+<!--                        </notebook>-->
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Patient Symptom Search View -->
+        <record id="view_dsl_patient_symptom_search" model="ir.ui.view">
+            <field name="name">dsl.patient.symptom.search</field>
+            <field name="model">dsl.patient.symptom</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="code"/>
+                    <field name="body_organ_id"/>
+                    <filter string="Active" name="active" domain="[('active', '=', True)]"/>
+                    <filter string="Inactive" name="inactive" domain="[('active', '=', False)]"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Body Organ" name="group_by_organ" context="{'group_by': 'body_organ_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <!-- Patient Symptom Action -->
+        <record id="action_dsl_patient_symptom" model="ir.actions.act_window">
+            <field name="name">Symptoms</field>
+            <field name="res_model">dsl.patient.symptom</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{'search_default_active': 1}</field>
+        </record>
+    </data>
+</odoo>

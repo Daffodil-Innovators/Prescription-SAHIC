@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record model="ir.sequence" id="seq_dsl_patient_body_organ">
+            <field name="name">Patient Body Organ</field>
+            <field name="code">dsl.patient.body.organ</field>
+            <field name="prefix">PBO-</field>
+            <field name="padding">5</field>
+            <field name="number_increment">1</field>
+            <field name="number_next_actual">1</field>
+        </record>
+
+        <record model="ir.sequence" id="seq_dsl_patient_symptom">
+            <field name="name">Patient Body Symptom</field>
+            <field name="code">dsl.patient.symptom</field>
+            <field name="prefix">PBS-</field>
+            <field name="padding">5</field>
+            <field name="number_increment">1</field>
+            <field name="number_next_actual">1</field>
+        </record>
+
+        <record model="ir.sequence" id="seq_dsl_patient_findings">
+            <field name="name">Patient Body Findings</field>
+            <field name="code">dsl.patient.findings</field>
+            <field name="prefix">PBF-</field>
+            <field name="padding">5</field>
+            <field name="number_increment">1</field>
+            <field name="number_next_actual">1</field>
+        </record>
+
+    </data>
+</odoo>

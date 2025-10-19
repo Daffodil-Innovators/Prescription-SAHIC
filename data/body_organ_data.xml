@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record model="dsl.patient.body.organ" id="dsl_patient_body_organ_1">
+            <field name="name">Ear</field>
+            <field name="code">PBO-00001</field>
+        </record>
+
+        <record model="dsl.patient.body.organ" id="dsl_patient_body_organ_2">
+            <field name="name">Nose</field>
+            <field name="code">PBO-00002</field>
+        </record>
+
+        <record model="dsl.patient.body.organ" id="dsl_patient_body_organ_3">
+            <field name="name">Mouth Cavity</field>
+            <field name="code">PBO-00003</field>
+        </record>
+
+        <record model="dsl.patient.body.organ" id="dsl_patient_body_organ_4">
+            <field name="name">Throat</field>
+            <field name="code">PBO-00004</field>
+        </record>
+
+        <record model="dsl.patient.body.organ" id="dsl_patient_body_organ_5">
+            <field name="name">Larynx and Esophagus</field>
+            <field name="code">PBO-00005</field>
+        </record>
+
+        <record model="dsl.patient.body.organ" id="dsl_patient_body_organ_6">
+            <field name="name">Neck</field>
+            <field name="code">PBO-00006</field>
+        </record>
+
+    </data>
+</odoo>

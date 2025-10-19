@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- EAR FINDINGS -->
+        <record id="finding_ear_1" model="dsl.patient.findings">
+            <field name="name">Macroscopic</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBF-00001</field>
+
+        </record>
+
+        <record id="finding_ear_2" model="dsl.patient.findings">
+            <field name="name">Otoscopic</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBF-00002</field>
+
+        </record>
+
+        <record id="finding_ear_3" model="dsl.patient.findings">
+            <field name="name">Middle Ear</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBF-00003</field>
+
+        </record>
+
+        <record id="finding_ear_4" model="dsl.patient.findings">
+            <field name="name">External Ear</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBF-00004</field>
+
+        </record>
+
+        <!-- NOSE FINDINGS -->
+        <record id="finding_nose_1" model="dsl.patient.findings">
+            <field name="name">Anterior Rhinoscopy</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBF-00005</field>
+        </record>
+
+        <record id="finding_nose_2" model="dsl.patient.findings">
+            <field name="name">Posterior of Rhinoscopy</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBF-00006</field>
+        </record>
+
+        <!-- MOUTH CAVITY FINDINGS -->
+        <record id="finding_mouth_1" model="dsl.patient.findings">
+            <field name="name">Lips</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBF-00007</field>
+        </record>
+
+        <record id="finding_mouth_2" model="dsl.patient.findings">
+            <field name="name">Gums</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBF-00008</field>
+        </record>
+
+        <record id="finding_mouth_3" model="dsl.patient.findings">
+            <field name="name">Floor of the mouth</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBF-00009</field>
+        </record>
+
+        <record id="finding_mouth_4" model="dsl.patient.findings">
+            <field name="name">Tongue</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBF-00010</field>
+        </record>
+
+        <record id="finding_mouth_5" model="dsl.patient.findings">
+            <field name="name">Root of the mouth (Hard Palate, Soft Palate)</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBF-00011</field>
+        </record>
+
+        <!-- THROAT FINDINGS -->
+        <record id="finding_throat_1" model="dsl.patient.findings">
+            <field name="name">I.L. Findings of hypopharynx</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_4"/>
+            <field name="code">PBF-00012</field>
+        </record>
+
+        <!-- LARYNX & ESOPHAGUS FINDINGS -->
+        <record id="finding_larynx_1" model="dsl.patient.findings">
+            <field name="name">I.L. Findings of Larynx, and Pyriform fossa</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBF-00013</field>
+        </record>
+
+        <record id="finding_larynx_2" model="dsl.patient.findings">
+            <field name="name">Fiber Optic Laryngoscopy</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBF-00014</field>
+        </record>
+
+        <!-- NECK FINDINGS -->
+        <record id="finding_neck_1" model="dsl.patient.findings">
+            <field name="name">Neck Findings</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_6"/>
+            <field name="code">PBF-00015</field>
+        </record>
+
+    </data>
+</odoo>

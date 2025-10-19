@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_dsl_patient_body_organ" parent="dsl_hms.menu_pres_cofig" action="action_dsl_patient_body_organ"
+              name="Body Organs"/>
+
+    <menuitem id="menu_dsl_patient_symptom" parent="dsl_hms.menu_pres_cofig" action="action_dsl_patient_symptom"
+              name="Symptoms"/>
+
+    <menuitem id="menu_dsl_patient_findings" parent="dsl_hms.menu_pres_cofig" action="action_dsl_patient_findings"
+              name="Findings"/>
+
+</odoo>

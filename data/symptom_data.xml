@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- EAR (1) -->
+        <record id="symptom_ear_1" model="dsl.patient.symptom">
+            <field name="name">Discharge</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00001</field>
+        </record>
+        <record id="symptom_ear_2" model="dsl.patient.symptom">
+            <field name="name">Hearing Impairment</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00002</field>
+        </record>
+        <record id="symptom_ear_3" model="dsl.patient.symptom">
+            <field name="name">Blockage feeling</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00003</field>
+        </record>
+        <record id="symptom_ear_4" model="dsl.patient.symptom">
+            <field name="name">Itching</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00004</field>
+        </record>
+        <record id="symptom_ear_5" model="dsl.patient.symptom">
+            <field name="name">Pain</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00005</field>
+        </record>
+        <record id="symptom_ear_6" model="dsl.patient.symptom">
+            <field name="name">Tinnitus</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00006</field>
+        </record>
+        <record id="symptom_ear_7" model="dsl.patient.symptom">
+            <field name="name">Foul Smelling Discharge</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00007</field>
+        </record>
+        <record id="symptom_ear_8" model="dsl.patient.symptom">
+            <field name="name">Bleeding</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00008</field>
+        </record>
+        <record id="symptom_ear_9" model="dsl.patient.symptom">
+            <field name="name">Burning</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00009</field>
+        </record>
+        <record id="symptom_ear_10" model="dsl.patient.symptom">
+            <field name="name">Non development of speech</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00010</field>
+        </record>
+        <record id="symptom_ear_11" model="dsl.patient.symptom">
+            <field name="name">Fever</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00011</field>
+        </record>
+        <record id="symptom_ear_12" model="dsl.patient.symptom">
+            <field name="name">Injury to ear</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00012</field>
+        </record>
+        <record id="symptom_ear_13" model="dsl.patient.symptom">
+            <field name="name">Vomiting</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00013</field>
+        </record>
+        <record id="symptom_ear_14" model="dsl.patient.symptom">
+            <field name="name">Unnecessary crying by children</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00014</field>
+        </record>
+        <record id="symptom_ear_15" model="dsl.patient.symptom">
+            <field name="name">Swelling</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00015</field>
+        </record>
+        <record id="symptom_ear_16" model="dsl.patient.symptom">
+            <field name="name">Vertigo with or without vomiting</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00016</field>
+        </record>
+        <record id="symptom_ear_17" model="dsl.patient.symptom">
+            <field name="name">Headache</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_1"/>
+            <field name="code">PBS-00017</field>
+        </record>
+
+        <!-- NOSE (2) -->
+        <record id="symptom_nose_1" model="dsl.patient.symptom">
+            <field name="name">Nasal blockage</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00018</field>
+        </record>
+        <record id="symptom_nose_2" model="dsl.patient.symptom">
+            <field name="name">Nasal bleeding</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00019</field>
+        </record>
+        <record id="symptom_nose_3" model="dsl.patient.symptom">
+            <field name="name">Nasal discharge</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00020</field>
+        </record>
+        <record id="symptom_nose_4" model="dsl.patient.symptom">
+            <field name="name">Loss of sense of smell</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00021</field>
+        </record>
+        <record id="symptom_nose_5" model="dsl.patient.symptom">
+            <field name="name">Nasal regurgitation</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00022</field>
+        </record>
+        <record id="symptom_nose_6" model="dsl.patient.symptom">
+            <field name="name">Sneezing</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00023</field>
+        </record>
+        <record id="symptom_nose_7" model="dsl.patient.symptom">
+            <field name="name">Foul smelling Nasal Discharge</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00024</field>
+        </record>
+        <record id="symptom_nose_8" model="dsl.patient.symptom">
+            <field name="name">Facial pain</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00025</field>
+        </record>
+        <record id="symptom_nose_9" model="dsl.patient.symptom">
+            <field name="name">Neckache</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00026</field>
+        </record>
+        <record id="symptom_nose_10" model="dsl.patient.symptom">
+            <field name="name">Headache - Frontal / Temporal</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00027</field>
+        </record>
+        <record id="symptom_nose_11" model="dsl.patient.symptom">
+            <field name="name">Episodal pain with vomiting and Watering from eyes</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00028</field>
+        </record>
+        <record id="symptom_nose_12" model="dsl.patient.symptom">
+            <field name="name">Discharge of crust</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00029</field>
+        </record>
+        <record id="symptom_nose_13" model="dsl.patient.symptom">
+            <field name="name">Injury to nose</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00030</field>
+        </record>
+        <record id="symptom_nose_14" model="dsl.patient.symptom">
+            <field name="name">Injury to eyes</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00031</field>
+        </record>
+        <record id="symptom_nose_15" model="dsl.patient.symptom">
+            <field name="name">Pain in the nose</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00032</field>
+        </record>
+        <record id="symptom_nose_16" model="dsl.patient.symptom">
+            <field name="name">Fever</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00033</field>
+        </record>
+        <record id="symptom_nose_17" model="dsl.patient.symptom">
+            <field name="name">Nasal voice</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00034</field>
+        </record>
+        <record id="symptom_nose_18" model="dsl.patient.symptom">
+            <field name="name">Mouth breathing</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00035</field>
+        </record>
+        <record id="symptom_nose_19" model="dsl.patient.symptom">
+            <field name="name">Snoring</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00036</field>
+        </record>
+        <record id="symptom_nose_20" model="dsl.patient.symptom">
+            <field name="name">Toothache</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00037</field>
+        </record>
+        <record id="symptom_nose_21" model="dsl.patient.symptom">
+            <field name="name">Swelling in the region</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_2"/>
+            <field name="code">PBS-00038</field>
+        </record>
+
+        <!-- MOUTH CAVITY (3) -->
+        <record id="symptom_mouth_1" model="dsl.patient.symptom">
+            <field name="name">Pain in the mouth, Jaw, Tongue</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBS-00039</field>
+        </record>
+        <record id="symptom_mouth_2" model="dsl.patient.symptom">
+            <field name="name">Difficulty of movement of Tongue</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBS-00040</field>
+        </record>
+        <record id="symptom_mouth_3" model="dsl.patient.symptom">
+            <field name="name">Ulceration / growth</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBS-00041</field>
+        </record>
+        <record id="symptom_mouth_4" model="dsl.patient.symptom">
+            <field name="name">Difficulty of biting, chewing</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBS-00042</field>
+        </record>
+        <record id="symptom_mouth_5" model="dsl.patient.symptom">
+            <field name="name">Difficulty of jaw movement</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBS-00043</field>
+        </record>
+        <record id="symptom_mouth_6" model="dsl.patient.symptom">
+            <field name="name">Bleeding</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBS-00044</field>
+        </record>
+        <record id="symptom_mouth_7" model="dsl.patient.symptom">
+            <field name="name">Swelling in the Mouth cavity</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_3"/>
+            <field name="code">PBS-00045</field>
+        </record>
+
+        <!-- THROAT (4) -->
+        <record id="symptom_throat_1" model="dsl.patient.symptom">
+            <field name="name">Throat pain</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_4"/>
+            <field name="code">PBS-00046</field>
+        </record>
+        <record id="symptom_throat_2" model="dsl.patient.symptom">
+            <field name="name">Fever</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_4"/>
+            <field name="code">PBS-00047</field>
+        </record>
+        <record id="symptom_throat_3" model="dsl.patient.symptom">
+            <field name="name">Difficulty of swallowing</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_4"/>
+            <field name="code">PBS-00048</field>
+        </record>
+        <record id="symptom_throat_4" model="dsl.patient.symptom">
+            <field name="name">Feeling of obstruction during Swallowing</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_4"/>
+            <field name="code">PBS-00049</field>
+        </record>
+        <record id="symptom_throat_5" model="dsl.patient.symptom">
+            <field name="name">Difficulty in Breathing</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_4"/>
+            <field name="code">PBS-00050</field>
+        </record>
+        <record id="symptom_throat_6" model="dsl.patient.symptom">
+            <field name="name">Bleeding from the throat</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_4"/>
+            <field name="code">PBS-00051</field>
+        </record>
+        <record id="symptom_throat_7" model="dsl.patient.symptom">
+            <field name="name">Swelling in the neck/Throat</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_4"/>
+            <field name="code">PBS-00052</field>
+        </record>
+        <record id="symptom_throat_8" model="dsl.patient.symptom">
+            <field name="name">Joint pain +- Bodyache</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_4"/>
+            <field name="code">PBS-00053</field>
+        </record>
+        <record id="symptom_throat_9" model="dsl.patient.symptom">
+            <field name="name">Foreign Body sensation in throat</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_4"/>
+            <field name="code">PBS-00054</field>
+        </record>
+
+        <!-- LARYNX & ESOPHAGUS (5) -->
+        <record id="symptom_larynx_1" model="dsl.patient.symptom">
+            <field name="name">Change of voice</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00055</field>
+        </record>
+        <record id="symptom_larynx_2" model="dsl.patient.symptom">
+            <field name="name">Hoarseness of voice</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00056</field>
+        </record>
+        <record id="symptom_larynx_3" model="dsl.patient.symptom">
+            <field name="name">Aphonia</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00057</field>
+        </record>
+        <record id="symptom_larynx_4" model="dsl.patient.symptom">
+            <field name="name">Difficulty of breathing</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00058</field>
+        </record>
+        <record id="symptom_larynx_5" model="dsl.patient.symptom">
+            <field name="name">Stridor (Noisy breathing)</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00059</field>
+        </record>
+        <record id="symptom_larynx_6" model="dsl.patient.symptom">
+            <field name="name">Wheezing during breathing</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00060</field>
+        </record>
+        <record id="symptom_larynx_7" model="dsl.patient.symptom">
+            <field name="name">Bleeding with cough</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00061</field>
+        </record>
+        <record id="symptom_larynx_8" model="dsl.patient.symptom">
+            <field name="name">Cough - Dry/productive</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00062</field>
+        </record>
+        <record id="symptom_larynx_9" model="dsl.patient.symptom">
+            <field name="name">Swelling in the neck</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00063</field>
+        </record>
+        <record id="symptom_larynx_10" model="dsl.patient.symptom">
+            <field name="name">Dysphagia</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00064</field>
+        </record>
+        <record id="symptom_larynx_11" model="dsl.patient.symptom">
+            <field name="name">Regurgitation of food</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00065</field>
+        </record>
+        <record id="symptom_larynx_12" model="dsl.patient.symptom">
+            <field name="name">Loss of weight</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00066</field>
+        </record>
+        <record id="symptom_larynx_13" model="dsl.patient.symptom">
+            <field name="name">Pain in the chest</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00067</field>
+        </record>
+        <record id="symptom_larynx_14" model="dsl.patient.symptom">
+            <field name="name">Pain at the back</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00068</field>
+        </record>
+
+        <record id="symptom_larynx_15" model="dsl.patient.symptom">
+            <field name="name">Dysphonea</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_5"/>
+            <field name="code">PBS-00069</field>
+        </record>
+
+        <!-- NECK (6) -->
+        <record id="symptom_neck_1" model="dsl.patient.symptom">
+            <field name="name">Palpable lymphnodes / Swelling</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_6"/>
+            <field name="code">PBS-00070</field>
+        </record>
+        <record id="symptom_neck_2" model="dsl.patient.symptom">
+            <field name="name">Any sinus / Ulceration</field>
+            <field name="body_organ_id" ref="dsl_patient_body_organ_6"/>
+            <field name="code">PBS-00071</field>
+        </record>
+
+    </data>
+</odoo>
